@@ -1,0 +1,25 @@
+{
+  "name": "poc-jest-sample-structure",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=test jest --watch",
+    "test:unit": "jest -c jest.config.unit.js --watch",
+    "test:integration": "jest -c jest.config.integration.js --watch",
+    "test-ci": "jest --ci --testResultsProcessor=jest-junit"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jest-junit": "^12.0.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
