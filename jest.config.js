@@ -9,10 +9,10 @@ module.exports = {
   // reporters: ['default', ['jest-junit', { suiteName: 'jest tests' }]],
   // Stop running tests after `n` failures
   // bail: 0,
-  testResultsProcessor: 'jest-junit',
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/rc/nmsq92jj2s5c0p6xxvct4wsc0000gn/T/jest_dx",
-
+  // testResultsProcessor: 'jest-junit',
+  // reporters: ['default', ['jest-junit', { suiteName: 'ccccjest testsxxx' }]],
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
 
