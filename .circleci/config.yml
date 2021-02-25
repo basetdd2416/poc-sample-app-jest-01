@@ -22,6 +22,8 @@ workflows:
     jobs:
       - node/test:
           setup:
+            - checkout
+            - node/install-packages
             - run:
                 command: npm run test
                 environment:
