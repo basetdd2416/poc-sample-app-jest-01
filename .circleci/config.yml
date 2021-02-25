@@ -11,9 +11,13 @@ jobs:
       - node/install-packages
       - run:
           command: npm run test
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
 workflows:
   test_my_app:
     jobs:
       - test
-
-
