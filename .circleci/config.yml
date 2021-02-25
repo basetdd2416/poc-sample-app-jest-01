@@ -1,11 +1,6 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
-
 steps:
   - run:
       name: Install JUnit coverage reporter
@@ -19,3 +14,5 @@ steps:
       path: ./reports/junit/
   - store_artifacts:
       path: ./reports/junit
+
+
