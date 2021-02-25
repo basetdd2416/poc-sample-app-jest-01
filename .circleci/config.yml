@@ -1,23 +1,33 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
-jobs:
-  test:
-    executor:
-      name: node/default
-      tag: '13.14'
-    steps:
-      - checkout
-      - node/install-packages
-      - run:
-          command: npm run test
-          environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
-      - store_test_results:
-          path: ./reports/junit/
-      - store_artifacts:
-          path: ./reports/junit
+# jobs:
+#   test:
+#     executor:
+#       name: node/default
+#       tag: '13.14'
+#     steps:
+#       - checkout
+#       - node/install-packages
+#       - run:
+#           command: npm run test
+#           environment:
+#             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+#       - store_test_results:
+#           path: ./reports/junit/
+#       - store_artifacts:
+#           path: ./reports/junit
 workflows:
   test_my_app:
     jobs:
-      - test
+      - node/test:
+          setup:
+            - run:
+              command: npm run test
+              environment:
+                JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+            - store_test_results:
+                path: ./reports/junit/
+            - store_artifacts:
+                path: ./reports/junit
+          
