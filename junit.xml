@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="My suite tests" tests="3" failures="0" errors="0" time="3.102">
+  <testsuite name="Sample UNIT Test" errors="0" failures="0" skipped="0" timestamp="2021-03-03T08:13:41" time="2.241" tests="1">
+    <testcase classname="Sample UNIT Test should test that true === true" name="Sample UNIT Test should test that true === true" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="Sample integration Test" errors="0" failures="0" skipped="0" timestamp="2021-03-03T08:13:41" time="2.25" tests="1">
+    <testcase classname="Sample integration Test should test that true === true" name="Sample integration Test should test that true === true" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Sample Test" errors="0" failures="0" skipped="0" timestamp="2021-03-03T08:13:43" time="0.274" tests="1">
+    <testcase classname="Sample Test should test that true === true" name="Sample Test should test that true === true" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
