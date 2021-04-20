@@ -7,7 +7,7 @@
     "test": "jest --watchAll --no-cache",
     "test:unit": "jest -c jest.config.unit.js --watch",
     "test:integration": "jest -c jest.config.integration.js --watch",
-    "test-ci": "jest --ci --runInBand --reporters=default --reporters=jest-junit"
+    "test-ci": "jest --ci --runInBand --reporters=default --reporters=jest-html-reporters"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -23,6 +23,7 @@
     "eslint": "^7.21.0",
     "eslint-plugin-jest": "^24.1.5",
     "jest": "^26.6.3",
+    "jest-html-reporters": "^2.1.4",
     "supertest": "^6.1.3"
   }
 }

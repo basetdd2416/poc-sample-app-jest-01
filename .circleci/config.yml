@@ -12,11 +12,11 @@ jobs:
       - run:
           command: npm run test-ci
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+            JEST_HTML_REPORTERS_TEMP_DIR_PATH: ./reports/html-reporter
       - store_test_results:
-          path: ./reports/junit/
+          path: ./reports/html-reporter
       - store_artifacts:
-          path: ./reports/junit
+          path: ./reports/html-reporter
 
 workflows:
   test_my_app:
