@@ -14,9 +14,9 @@ jobs:
           environment:
             JEST_HTML_REPORTERS_PUBLIC_PATH: ./reports/html-reporter/
       - store_test_results:
-          path: ./reports/html-reporter/
+          path: ./reports/html-reporter
       - store_artifacts:
-          path: ./reports/html-reporter/
+          path: ./reports/html-reporter
 
 workflows:
   test_my_app:
